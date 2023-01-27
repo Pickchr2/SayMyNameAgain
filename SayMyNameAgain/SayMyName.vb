@@ -10,7 +10,7 @@ Option Compare Text
 
 Imports System
 
-Module Program
+Module SayMyNameAgain
     Sub Main(args As String())
         Dim userInput As String
 
