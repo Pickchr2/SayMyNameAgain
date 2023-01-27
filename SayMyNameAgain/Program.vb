@@ -17,5 +17,17 @@ Module Program
         Console.WriteLine("Please enter the name of an employee to find out their assigned duty...")
         userInput = Console.ReadLine()
 
+        Select Case userInput
+            Case "Emily"
+                Console.WriteLine($"{userInput}'s assigned work duty is to sort 9999 resistors before lunch.")
+            Case "Joe"
+                Console.WriteLine($"{userInput}'s assigned work duty is to investigate who killed the snowcone machine.")
+            Case "Chris"
+                Console.WriteLine($"{userInput}'s assigned work duty is to do...whatever it is they do around here..")
+            Case "Tim"
+                Console.WriteLine($"{userInput}'s assigned work duty is to award this assignment an A!")
+            Case Else
+                Console.WriteLine($"We have no employee of record named {userInput}.")
+        End Select
     End Sub
 End Module
